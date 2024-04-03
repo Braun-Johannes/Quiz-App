@@ -16,7 +16,7 @@ body {
   margin-top: 0;
 }
 
-.question-container {
+.first-question-container {
   box-sizing: border-box;
   position: relative;
   text-align: center;
@@ -24,9 +24,40 @@ body {
   font-size: 1.5rem;
   width: 50%;
   left: 25%;
+  margin: 1.5rem;
   border: solid black;
+  border-radius: 5px;
   background-color: rgb(169, 169, 169);
 }
+
+.second-question-container {
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 50%;
+  left: 25%;
+  margin: 1.5rem;
+  border: solid black;
+  border-radius: 5px;
+  background-color: rgb(169, 169, 169);
+}
+
+.third-question-container {
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 50%;
+  left: 25%;
+  margin: 1.5rem;
+  border: solid black;
+  border-radius: 5px;
+  background-color: rgb(169, 169, 169);
+}
+
 #bookmark-empty {
   position: absolute;
   top: -1rem;
@@ -46,7 +77,8 @@ body {
 
 .html,
 .flexbox,
-.css {
+.css,
+.javascript {
   border: solid 1px;
   border-radius: 5px;
   background-color: rgb(173, 216, 230);
