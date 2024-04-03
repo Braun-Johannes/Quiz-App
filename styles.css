@@ -37,10 +37,10 @@ body {
 #bookmark-nav,
 #user-nav {
   font-size: 2rem;
-  border: solid 1px;
   border-radius: 5px;
   background-color: rgb(173, 216, 230);
-  font-size: 1rem;
+  padding: 5px;
+  color: black;
 }
 
 .first-question-container {
