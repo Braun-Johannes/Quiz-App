@@ -43,6 +43,13 @@ body {
   color: black;
 }
 
+#home-nav:hover,
+#bookmark-nav:hover,
+#user-nav:hover {
+  color: lightslategray;
+  background-color: bisque;
+}
+
 .first-question-container {
   box-sizing: border-box;
   position: relative;
