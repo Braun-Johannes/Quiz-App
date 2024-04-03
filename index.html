@@ -8,6 +8,7 @@
     , initial-scale=1.0"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
     <script src=""></script>
     <title>Quiz App</title>
   </head>
@@ -15,7 +16,18 @@
     <header>
       <h1 class="title-container">Quiz App</h1>
     </header>
-    <main></main>
+    <main>
+      <div class="question-container">
+        <p class="question">Is this the right one?</p>
+        <i class="fa fa-bookmark-o" id="bookmark-empty" aria-hidden="true"></i>
+        <input type="button" value="Show Answer" />
+        <ul class="categories-container">
+          <li class="html">#html</li>
+          <li class="flexbox">#flexbox</li>
+          <li class="css">#css</li>
+        </ul>
+      </div>
+    </main>
   </body>
   <footer></footer>
 </html>
