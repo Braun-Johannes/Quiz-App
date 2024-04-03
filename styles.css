@@ -33,9 +33,7 @@ body {
   justify-content: space-evenly;
 }
 
-#home-nav,
-#bookmark-nav,
-#user-nav {
+.nav-container i {
   font-size: 2rem;
   border-radius: 5px;
   background-color: rgb(173, 216, 230);
@@ -43,9 +41,7 @@ body {
   color: black;
 }
 
-#home-nav:hover,
-#bookmark-nav:hover,
-#user-nav:hover {
+.nav-container i:hover {
   color: lightslategray;
   background-color: bisque;
 }
@@ -92,20 +88,19 @@ body {
   background-color: rgb(169, 169, 169);
 }
 
-#bookmark-empty {
+.first-question-container i {
   position: absolute;
   top: -1rem;
   right: 10px;
   font-size: 2rem;
-  /* background-color: white; */
 }
 
-#bookmark-filled {
+.second-question-container i,
+.third-question-container i {
   position: absolute;
   top: -1rem;
   right: 10px;
   font-size: 2rem;
-  /* background-color: white; */
 }
 
 .categories-container {
