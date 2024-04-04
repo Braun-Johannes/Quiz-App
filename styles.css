@@ -1,6 +1,21 @@
-body {
-  /* background-color: black; */
+* {
+  /* box-sizing: border-box; */
   margin: 0;
+}
+
+body {
+  background: radial-gradient(circle, #05bd86, #006b20);
+}
+
+p,
+article,
+h2,
+h1 {
+  color: #01070e;
+}
+
+ul {
+  padding: 0;
 }
 
 .title-container {
@@ -8,9 +23,9 @@ body {
   position: relative;
   text-align: center;
   font-size: 3rem;
-  background-color: rgb(169, 169, 169);
-  color: rgb(0, 0, 0);
-  border: solid black;
+  background-color: rgba(5, 189, 134, 0.344);
+  color: #01070e;
+  border: solid #07df7a;
   width: 100%;
   top: 0;
   margin-top: 0;
@@ -23,7 +38,7 @@ body {
   z-index: 10;
   bottom: 3%;
   text-align: center;
-  background-color: rgb(192, 192, 192, 0.5);
+  background-color: rgb(5, 189, 134, 0.5);
 }
 
 .nav-container {
@@ -36,21 +51,22 @@ body {
 .nav-container i {
   font-size: 2rem;
   border-radius: 5px;
-  background-color: rgb(173, 216, 230);
+  background-color: #005119;
   padding: 5px;
-  color: black;
+  color: #01070e;
+  border: solid 1px black;
 }
 
 .nav-container i:hover {
-  color: lightslategray;
-  background-color: bisque;
+  color: #006b20;
+  background-color: #05bd86;
 }
 
-.nav-container a.active {
+.nav-banner a.active {
   cursor: pointer;
-  filter: brightness(150%);
+  color: black;
 }
-
+/* active no longer working */
 .first-question-container {
   box-sizing: border-box;
   position: relative;
@@ -62,7 +78,7 @@ body {
   margin: 1.5rem;
   border: solid black;
   border-radius: 5px;
-  background-color: rgb(169, 169, 169);
+  background-color: #05bd86;
 }
 
 .second-question-container {
@@ -76,7 +92,7 @@ body {
   margin: 1.5rem;
   border: solid black;
   border-radius: 5px;
-  background-color: rgb(169, 169, 169);
+  background-color: #05bd86;
 }
 
 .third-question-container {
@@ -88,9 +104,9 @@ body {
   width: 50%;
   left: 25%;
   margin: 1.5rem;
-  border: solid black;
+  border: solid;
   border-radius: 5px;
-  background-color: rgb(169, 169, 169);
+  background-color: #05bd86;
 }
 
 .first-question-container i {
@@ -122,9 +138,9 @@ body {
 .flexbox,
 .css,
 .javascript {
-  border: solid 1px;
+  border: solid 1px #07df7a;
   border-radius: 5px;
-  background-color: rgb(173, 216, 230);
+  background-color: #05bd86;
   font-size: 1rem;
 }
 
