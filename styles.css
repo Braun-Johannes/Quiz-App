@@ -46,6 +46,11 @@ body {
   background-color: bisque;
 }
 
+.nav-container a.active {
+  cursor: pointer;
+  filter: brightness(150%);
+}
+
 .first-question-container {
   box-sizing: border-box;
   position: relative;
@@ -123,7 +128,7 @@ body {
   font-size: 1rem;
 }
 
-.container-try {
+.description-container {
   box-sizing: border-box;
   position: absolute;
   display: flex;
