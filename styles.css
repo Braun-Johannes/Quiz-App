@@ -107,6 +107,7 @@ body {
   box-sizing: border-box;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   list-style: none;
   width: 50%;
   padding: 0;
@@ -120,4 +121,36 @@ body {
   border-radius: 5px;
   background-color: rgb(173, 216, 230);
   font-size: 1rem;
+}
+
+.container-try {
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.profile-name {
+  position: relative;
+  bottom: 80%;
+  left: 20%;
+}
+
+.profile-picture {
+  position: relative;
+  top: 10%;
+  margin: 3rem;
+  width: 15rem;
+  border-radius: 50%;
+}
+
+.about-me {
+  position: relative;
+  top: 25%;
+}
+
+.about-me-text {
+  position: relative;
+  top: 20%;
 }
