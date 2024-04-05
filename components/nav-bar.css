@@ -6,16 +6,20 @@
   bottom: 3%;
   text-align: center;
   background-color: var(--background);
-}
-
-.nav-container {
   max-width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
 }
 
-.nav-container i {
+/* .nav-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+.nav-banner i {
   font-size: 2rem;
   border-radius: 5px;
   background-color: var(--secondary);
@@ -24,7 +28,7 @@
   border: solid 1px var(--accent);
 }
 
-.nav-container i:hover {
+.nav-banner i:hover {
   color: var(--primary);
   background-color: var(--background);
   cursor: pointer;
