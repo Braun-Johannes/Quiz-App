@@ -1,0 +1,35 @@
+.nav-banner {
+  padding: 15px 0;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  bottom: 3%;
+  text-align: center;
+  background-color: var(--background);
+}
+
+.nav-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-container i {
+  font-size: 2rem;
+  border-radius: 5px;
+  background-color: var(--secondary);
+  padding: 5px;
+  color: var(--text);
+  border: solid 1px var(--accent);
+}
+
+.nav-container i:hover {
+  color: var(--primary);
+  background-color: var(--background);
+  cursor: pointer;
+}
+
+.nav-banner a.active {
+  filter: brightness(300%);
+}
