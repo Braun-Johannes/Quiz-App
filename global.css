@@ -1,0 +1,23 @@
+@import "/components/question-cards.css";
+@import "/components/colors.css";
+@import "/components/nav-bar.css";
+@import "/components/profile.css";
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: radial-gradient(circle, var(--primary), var(--background));
+}
+
+p,
+article,
+h2,
+h1 {
+  color: #01070e;
+}
+
+ul {
+  padding: 0;
+}
