@@ -1,6 +1,5 @@
 @import "/components/titel.css";
 @import "/components/question-cards.css";
-@import "/components/colors.css";
 @import "/components/nav-bar.css";
 @import "/components/profile.css";
 * {
@@ -21,4 +20,16 @@ h1 {
 
 ul {
   padding: 0;
+}
+:root {
+  --text: #100304;
+  --background: rgb(253, 242, 242);
+  --primary: #da2f33;
+  --secondary: #e8bb82;
+  --accent: #e4cd68;
+  --text-dark: #fceeef;
+  --background-dark: #0d0202;
+  --primary-dark: #d02528;
+  --secondary-dark: #7d5117;
+  --accent-dark: #98811b;
 }

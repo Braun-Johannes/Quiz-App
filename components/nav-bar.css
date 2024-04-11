@@ -2,22 +2,15 @@
   padding: 15px 0;
   width: 100%;
   position: fixed;
-  z-index: 10;
   bottom: 3%;
   text-align: center;
-  background-color: var(--background);
+  background-color: rgb(253, 242, 242, 0.5);
   max-width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
 }
-
-/* .nav-container {
-  max-width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-evenly;
-} */
+/* suggested was background-color: rgba(var(--background-rgb */
 
 .nav-banner i {
   font-size: 2rem;
