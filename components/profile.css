@@ -9,6 +9,7 @@
 .profile-name {
   display: inline-block;
   margin: 10px;
+  text-shadow: 2px 2px 4px var(--accent);
 }
 
 .profile-picture {
@@ -20,6 +21,7 @@
 
 .about-me {
   margin: 1rem;
+  text-shadow: 2px 2px 4px var(--accent);
 }
 
 .about-me-text {
