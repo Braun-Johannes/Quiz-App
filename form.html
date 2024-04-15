@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/components/global.css" />
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
     <script src="/js/index.js" defer></script>
+    <script src="/js/card-creator.js"></script>
     <title>Creator</title>
   </head>
   <body>
@@ -25,6 +26,7 @@
             name="question"
             id="question"
             placeholder="Enter your question here"
+            data-js="question"
             required
           ></textarea>
           <label for="answer">Answer:</label>
@@ -32,6 +34,7 @@
             name="answer"
             id="answer"
             placeholder="Enter your answer here"
+            data-js="answer"
             required
           ></textarea>
           <label for="tags">Tag:</label>
@@ -39,13 +42,16 @@
             type="text"
             name="tags"
             id="tags"
+            data-js="tags"
             placeholder="#Example #Tag"
             minlength="1"
             maxlength="30"
             required
           />
         </fieldset>
-        <button type="submit" class="submit">Create Quiz-Card!</button>
+        <button type="submit" class="submit" data-js="create-submit">
+          Create Quiz-Card!
+        </button>
       </form>
     </main>
     <footer>
