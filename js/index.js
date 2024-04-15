@@ -16,14 +16,27 @@ bookmarkIcons.forEach((bookmarkIcon) => {
   });
 });
 
-function toggleAnswer(answer1) {
-  const answerButton = document.getElementById(answer1);
-  const answerDiv = document.getElementById(answer1);
+function toggleAnswer(answer) {
+  const answerDisplay = document.getElementById(answer);
+  const answerDiv = document.getElementById(answer);
   if (answerDiv.style.display === "none" || answerDiv.style.display === "") {
-    answerButton.textContent = answerDiv.textContent;
+    answerDisplay.textContent = answerDiv.textContent;
     answerDiv.style.display = "block";
+    answerDisplay.value = "Hide Answer";
   } else {
-    answerButton.textContent = answerDiv.textContent;
+    answerDisplay.textContent = answerDiv.textContent;
     answerDiv.style.display = "none";
+    answerDisplay.value = "Show Answer";
   }
 }
+
+const answerButtons = document.querySelectorAll('[data-js="answer-button"]');
+answerButtons.forEach((button) => {
+  button.addEventListener("click", function () {
+    if (button.textContent === "Hide Answer") {
+      button.textContent = "Show Answer";
+    } else {
+      button.textContent = "Hide Answer";
+    }
+  });
+});
