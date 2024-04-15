@@ -27,16 +27,24 @@
             id="question"
             placeholder="Enter your question here"
             data-js="question"
+            maxlength="150"
             required
           ></textarea>
+          <div class="character-counter" data-js="questions-counter">
+            150 characters left
+          </div>
           <label for="answer">Answer:</label>
           <textarea
             name="answer"
             id="answer"
             placeholder="Enter your answer here"
             data-js="answer"
+            maxlength="150"
             required
           ></textarea>
+          <div class="character-counter" data-js="answer-counter">
+            150 characters left
+          </div>
           <label for="tags">Tag:</label>
           <input
             type="text"
