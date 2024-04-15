@@ -1,4 +1,4 @@
-.first-question-container {
+.question-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -16,47 +16,7 @@
   text-align: center;
 }
 
-.second-question-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 50%;
-  height: 15rem;
-  top: -5rem;
-  /* Why start top 0 at the point it is starting?? */
-  transform: translate(50%, 50%);
-  margin-bottom: 3rem;
-  border: solid var(--text);
-  background-color: var(--secondary);
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-.third-question-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 50%;
-  height: 15rem;
-  top: -5rem;
-  /* Why start top 0 at the point it is starting?? */
-  transform: translate(50%, 50%);
-  margin-bottom: 3rem;
-  border: solid var(--text);
-  background-color: var(--secondary);
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-.first-question-container p,
-.second-question-container p,
-.third-question-container p {
+.question-container p {
   position: relative;
   top: 10%;
 }
@@ -77,10 +37,7 @@
   list-style: none;
 }
 
-.html,
-.flexbox,
-.css,
-.javascript {
+.categorie {
   border: solid 1px var(--primary);
   border-radius: 5px;
   background-color: var(--background);
@@ -88,15 +45,7 @@
   margin: 5px;
 }
 
-.first-question-container i {
-  position: absolute;
-  top: -1rem;
-  right: 10px;
-  font-size: 2rem;
-}
-
-.second-question-container i,
-.third-question-container i {
+.question-container i {
   position: absolute;
   top: -1rem;
   right: 10px;
