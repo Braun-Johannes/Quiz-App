@@ -21,10 +21,16 @@
   top: 10%;
 }
 
-[type="button"] {
+.button {
   position: relative;
   top: 10%;
   margin: 5px;
+}
+.answer {
+  position: relative;
+  top: 10%;
+  margin: 5px;
+  display: none;
 }
 
 .categories-container {

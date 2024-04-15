@@ -15,3 +15,15 @@ bookmarkIcons.forEach((bookmarkIcon) => {
     bookmarkIcon.classList.toggle("fa-bookmark");
   });
 });
+
+function toggleAnswer(answer1) {
+  const answerButton = document.getElementById(answer1);
+  const answerDiv = document.getElementById(answer1);
+  if (answerDiv.style.display === "none" || answerDiv.style.display === "") {
+    answerButton.textContent = answerDiv.textContent;
+    answerDiv.style.display = "block";
+  } else {
+    answerButton.textContent = answerDiv.textContent;
+    answerDiv.style.display = "none";
+  }
+}
