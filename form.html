@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width
+    , initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="/components/global.css" />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    <script src="/js/index.js" defer></script>
+    <title>Creator</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title-container">Card-Creator</h1>
+    </header>
+    <main class="main-form">
+      <form data-js="create-form">
+        <fieldset>
+          <legend>Create your own Quiz-Cards</legend>
+          <label for="question">Question:</label>
+          <textarea
+            name="question"
+            id="question"
+            placeholder="Enter your question here"
+            required
+          ></textarea>
+          <label for="answer">Answer:</label>
+          <textarea
+            name="answer"
+            id="answer"
+            placeholder="Enter your answer here"
+            required
+          ></textarea>
+          <label for="tags">Tag:</label>
+          <input
+            type="text"
+            name="tags"
+            id="tags"
+            placeholder="#Example #Tag"
+            minlength="1"
+            maxlength="30"
+            required
+          />
+        </fieldset>
+        <button type="submit" class="submit">Create Quiz-Card!</button>
+      </form>
+    </main>
+    <footer>
+      <nav class="nav-banner">
+        <a href="/index.html" alt="Home">
+          <i class="fa fa-home" aria-hidden="true"></i
+        ></a>
+        <a href="/bookmark.html" alt="Bookmarks">
+          <i class="fa fa-bookmark" aria-hidden="true"></i
+        ></a>
+        <a href="/form.html" alt="Create" class="active">
+          <i class="fa fa-plus-circle" aria-hidden="true"></i>
+        </a>
+        <a href="/profile.html" alt="Profile">
+          <i class="fa fa-user" aria-hidden="true"></i
+        ></a>
+      </nav>
+    </footer>
+  </body>
+</html>
