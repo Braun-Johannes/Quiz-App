@@ -4,47 +4,47 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=
+      content="width= device-width
     , initial-scale=1.0"
     />
     <link rel="stylesheet" href="/components/global.css" />
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
-    <script src="" defer></script>
+    <script src="/js/index.js" defer></script>
     <title>Quiz App</title>
   </head>
-  <body>
+  <body id="start-doc">
     <header>
       <h1 class="title-container">Quiz App</h1>
     </header>
     <main>
-      <section class="first-question-container" id="first-question-container">
+      <section class="question-container" id="question-container">
         <p class="question">What is Semantic HTML?</p>
-        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+        <i class="fa fa-bookmark-o" aria-hidden="true" data-js="bookmark"></i>
         <input type="button" value="Show Answer" />
         <ul class="categories-container">
-          <li class="html">#html</li>
-          <li class="flexbox">#flexbox</li>
-          <li class="css">#css</li>
+          <li class="categorie">#html</li>
+          <li class="categorie">#flexbox</li>
+          <li class="categorie">#css</li>
         </ul>
       </section>
-      <section class="second-question-container">
+      <section class="question-container">
         <p class="question">What does CSS stand for?</p>
-        <i class="fa fa-bookmark" aria-hidden="true"></i>
+        <i class="fa fa-bookmark" aria-hidden="true" data-js="bookmark"></i>
         <input type="button" value="Show Answer" />
         <ul class="categories-container">
-          <li class="html">#html</li>
-          <li class="flexbox">#flexbox</li>
-          <li class="css">#css</li>
+          <li class="categorie">#html</li>
+          <li class="categorie">#flexbox</li>
+          <li class="categorie">#css</li>
         </ul>
       </section>
-      <section class="third-question-container">
+      <section class="question-container">
         <p class="question">Do we need JavaScript for the buttons?</p>
-        <i class="fa fa-bookmark" aria-hidden="true"></i>
+        <i class="fa fa-bookmark" aria-hidden="true" data-js="bookmark"></i>
         <input type="button" value="Show Answer" />
         <ul class="categories-container">
-          <li class="html">#html</li>
-          <li class="javascript">#JavaScript</li>
-          <li class="css">#css</li>
+          <li class="categorie">#html</li>
+          <li class="categorie">#JavaScript</li>
+          <li class="categorie">#css</li>
         </ul>
       </section>
     </main>
