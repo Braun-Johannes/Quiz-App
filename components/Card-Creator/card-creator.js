@@ -4,14 +4,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const oldQuestion = document.querySelector('[data-js="question"]');
   const oldAnswer = document.querySelector('[data-js="answer"]');
   const oldTags = document.querySelector('[data-js="tags"]');
-  const oldButton = document.querySelector('[data-js="answer-button"]');
 
-  // console.log(oldButton.textContent);
+  function getRandomInt() {
+    return Math.floor(Math.random() * 10000000);
+  }
 
   createForm.addEventListener("submit", (event) => {
     event.preventDefault();
+    const id = getRandomInt();
 
     const newCard = document.createElement("section");
+    newCard.setAttribute("id", id);
     newCard.classList.add("question-container");
 
     const newQuestion = document.createElement("p");
@@ -28,15 +31,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const newButton = document.createElement("button");
     newButton.classList.add("button");
-    // newButton.setAttribute("data-js", "answer-button");
-    newButton.setAttribute("onclick", "toggleAnswer('answer4')"); //dynamische id ?!
-    // newButton.textContent = oldButton.textContent; //maybe .value
+    newButton.setAttribute("data-js", "answer-button");
+    newButton.setAttribute("onclick", `toggleAnswerNew("${id}")`);
+    newButton.textContent = "Show Answer";
     newCard.append(newButton);
 
     const newAnswer = document.createElement("p");
     newAnswer.name = "answer"; // maybe not needed?
     newAnswer.classList.add("answer");
-    newAnswer.setAttribute("id", "answer4"); //dynamsche id ?!
+    newAnswer.setAttribute("id", `${id}-answer`);
     newAnswer.textContent = oldAnswer.value;
     newCard.append(newAnswer);
 
@@ -44,12 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
     newList.classList.add("categories-container");
     newCard.append(newList);
 
-    //practice
-    // const newTag = document.createElement("li");
-    // newTag.classList.add("categorie");
-    // newTag.value = oldTags.value;
-    // newList.append(newTag);
-    //practice below
     const inputValue = oldTags.value.trim();
     const inputWords = inputValue.split(" ");
 
@@ -86,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// SafePoint
+// SafePoint (WRONG FORM)
 // const createForm = document.querySelector("[data-js='create-form']");
 // const cardContainer = document.querySelector(".main-form");
 // const oldQuestion = document.querySelector('[data-js="question"]');
