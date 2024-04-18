@@ -12,8 +12,10 @@ bookmarkIcons.forEach((bookmarkIcon) => {
 });
 
 function toggleAnswer(answer) {
+  console.log("läuft");
   const answerDisplay = document.getElementById(answer);
   const answerDiv = document.getElementById(answer);
+
   if (answerDiv.style.display === "none" || answerDiv.style.display === "") {
     answerDisplay.textContent = answerDiv.textContent;
     answerDiv.style.display = "block";
