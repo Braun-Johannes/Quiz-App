@@ -1,8 +1,8 @@
-@import "/components/titel.css";
-@import "/components/question-cards.css";
-@import "/components/nav-bar.css";
-@import "/components/profile.css";
-@import "/components/create-cards.css";
+@import "/components/Titel-Banner/titel.css";
+@import "/components/QuestionCards/question-cards.css";
+@import "/components/Nav-bar/nav-bar.css";
+@import "/components/Profile/profile.css";
+@import "/components/Card-Creator/create-cards.css";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -33,4 +33,8 @@ ul {
   --primary-dark: #d02528;
   --secondary-dark: #7d5117;
   --accent-dark: #98811b;
+}
+
+.placeholder {
+  height: 100px;
 }

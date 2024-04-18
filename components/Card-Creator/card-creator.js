@@ -29,25 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
     cardContainer.append(newCard);
   });
 
-  //   const questionCounter = document.querySelector(
-  //     '[data-js="questions-counter"]'
-  //   );
-  //   const answerCounter = document.querySelector('[data-js="answer-counter"]');
-
-  //   oldQuestion.addEventListener("input", function () {
-  //     const maxLengthQuestion = parseInt(oldQuestion.getAttribute("maxlength"));
-  //     const currentLengthQuestion = oldQuestion.value.length;
-  //     const charactersLeftQuestion = maxLengthQuestion - currentLengthQuestion;
-  //     questionCounter.textContent = `${charactersLeftQuestion} characters left`;
-  //   });
-  //   oldAnswer.addEventListener("input", function () {
-  //     const maxLengthAnswer = parseInt(oldQuestion.getAttribute("maxlength"));
-  //     const currentLengthAnswer = oldAnswer.value.length;
-  //     const charactersLeftAnswer = maxLengthAnswer - currentLengthAnswer;
-  //     answerCounter.textContent = `${charactersLeftAnswer} characters left`;
-  //   });
-  // outcommented because single for each
-
   const textareas = [
     {
       textarea: document.querySelector('[data-js="question"]'),
