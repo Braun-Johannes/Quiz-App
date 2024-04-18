@@ -17,17 +17,17 @@
       <h1 class="title-container">Quiz App</h1>
     </header>
     <main>
-      <section class="question-container" id="question-container">
+      <section class="question-container" id="answer1">
         <p class="question">Do we need Semantic HTML?</p>
         <i class="fa fa-bookmark-o" aria-hidden="true" data-js="bookmark"></i>
         <button
-          onclick="toggleAnswer('answer1')"
+          onclick="toggleAnswerNew('answer1')"
           class="button"
           data-js="answer-button"
         >
           Show Answer
         </button>
-        <p class="answer" id="answer1">
+        <p class="answer" id="answer1-answer">
           Yes, but the answer is way way longer. In the end i need to test what
           happens when the input is a novel!
         </p>
@@ -37,34 +37,34 @@
           <li class="categorie">#css</li>
         </ul>
       </section>
-      <section class="question-container">
+      <section class="question-container" id="answer2">
         <p class="question">What does CSS stand for?</p>
         <i class="fa fa-bookmark" aria-hidden="true" data-js="bookmark"></i>
         <button
-          onclick="toggleAnswer('answer2')"
+          onclick="toggleAnswerNew('answer2')"
           class="button"
           data-js="answer-button"
         >
           Show Answer
         </button>
-        <p class="answer" id="answer2">Cascading Style Sheets!</p>
+        <p class="answer" id="answer2-answer">Cascading Style Sheets!</p>
         <ul class="categories-container">
           <li class="categorie">#html</li>
           <li class="categorie">#flexbox</li>
           <li class="categorie">#css</li>
         </ul>
       </section>
-      <section class="question-container">
+      <section class="question-container" id="answer3">
         <p class="question">Do we need JavaScript for the buttons?</p>
         <i class="fa fa-bookmark" aria-hidden="true" data-js="bookmark"></i>
         <button
-          onclick="toggleAnswer('answer3')"
+          onclick="toggleAnswerNew('answer3')"
           class="button"
           data-js="answer-button"
         >
           Show Answer
         </button>
-        <p class="answer" id="answer3">Obviously!</p>
+        <p class="answer" id="answer3-answer">Obviously!</p>
         <ul class="categories-container">
           <li class="categorie">#html</li>
           <li class="categorie">#JavaScript</li>
@@ -77,13 +77,13 @@
         <a href="/index.html" alt="Home" class="active">
           <i class="fa fa-home" aria-hidden="true"></i
         ></a>
-        <a href="/bookmark.html" alt="Bookmarks">
+        <a href="/components/Bookmark/bookmark.html" alt="Bookmarks">
           <i class="fa fa-bookmark" aria-hidden="true"></i
         ></a>
-        <a href="/form.html" alt="Create">
+        <a href="/components/Card-Creator/form.html" alt="Create">
           <i class="fa fa-plus-circle" aria-hidden="true"></i>
         </a>
-        <a href="/profile.html" alt="Profile">
+        <a href="/components/Profile/profile.html" alt="Profile">
           <i class="fa fa-user" aria-hidden="true"></i
         ></a>
       </nav>
