@@ -10,10 +10,15 @@
   transform: translate(50%, 50%);
   margin-bottom: 3rem;
   border: solid var(--text);
+  border-radius: 5%;
   background-color: var(--secondary);
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
+}
+
+.answer {
+  position: relative;
 }
 
 .question-container p {
