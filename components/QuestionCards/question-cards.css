@@ -1,50 +1,31 @@
 .question-container {
   position: relative;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
   width: 50%;
-  height: 15rem;
-  top: -5rem;
-  transform: translate(50%, 50%);
+  top: 50px; /* WARUM KEINE PROZENT? */
+  left: 25%;
   margin-bottom: 3rem;
   border: solid var(--text);
-  border-radius: 5%;
+  border-radius: 15px;
   background-color: var(--secondary);
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
 }
-
+/* transform: translate(50%, 50%); WARUM VERSETZT DIESE SCHEISSE MEINE CARD */
 .answer {
-  position: relative;
-}
-
-.question-container p {
-  position: relative;
-  top: 10%;
-}
-
-.button {
-  position: relative;
-  top: 10%;
-  margin: 5px;
-}
-.answer {
-  position: relative;
-  top: 10%;
-  margin: 5px;
   display: none;
 }
 
 .categories-container {
-  position: relative;
+  /* position: relative;
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
   margin: 1rem;
-  padding: 0;
   list-style: none;
 }
 
@@ -54,6 +35,8 @@
   background-color: var(--background);
   font-size: 1rem;
   margin: 5px;
+  padding: 0 10px 0 10px;
+  display: inline-block;
 }
 
 .question-container i {
@@ -62,3 +45,28 @@
   right: 10px;
   font-size: 2rem;
 }
+/* .fa{
+  position: absolute;
+  top: -1rem;
+  right: 10px;
+  font-size: 2rem;
+ } Same as above. why smaller? */
+
+/* .button {
+  position: relative;
+  top: 10%;
+  margin: 5px;
+} */
+
+/* 
+.question-container p {
+  position: relative;
+  top: 10%;
+}
+
+.answer {
+  position: relative;
+  top: 10%;
+  margin: 5px;
+  display: none;
+} */
